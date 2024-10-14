@@ -1,0 +1,66 @@
+
+/* 左から優先して見つかったフォントを適用する(Webフォント) */
+body{url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+   /* font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif; */
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+/* 
+ * <h1>,<h2>,<h3>タグすべてにスタイルを適用
+ * (複数のタグ名をカンマ区切りで指定すると複数を一気に指定できる)
+ */
+h1,h2,h3{ 
+     /* 左から優先して見つかったフォントを適用する(游ゴシック) */
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;}
+ul li,ol li{
+    padding: 1em;
+    list-style-position: inside;
+}
+/* 
+ * <h2>タグにスタイルを適用
+ */
+h2{
+    /* 線を描画 (solid:1本線, #1e366a: 16進数カラーコード, 1px: 文字の太さ */
+    border-bottom: 1px solid #5e6976
+}
+
+div#section-correct-answer  {
+      /** 表示しない */
+    display: block;
+}
+/* 大文字のASCII文字で順序を表すためのカウンター・スタイル */
+ol.answers{
+     list-style: upper-alpha; 
+}
+
+ /*
+ * リストにマウスをおいたときだけスタイルが変わる
+ */
+ol.answers li:hover{
+    border: 0.1em solid #1e366a;
+    background-color: #e5ecfc;
+      /* マウスのポインタを変化させる */
+    padding: 0.9em;
+    cursor:pointer;
+}
+
+#main{
+     /* 要素の内側（境界線からコンテンツ本体の間)の領域を指定(上下, 左右) */
+   padding:0 1.5em;
+}
+
+span#correct-answer{
+     /* 文字の太さを指定 */
+   font-weight:bold;
+   /* 文字の色を変更 */
+   color:#f05959;
+}
+div.section {
+    /* 上の余白を指定 */
+    margin-top: 2em;
+}
+.correct-answer{
+  color: rgb(121, 33, 198);
+}
+
+
+
