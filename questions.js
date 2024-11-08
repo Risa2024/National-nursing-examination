@@ -1,3 +1,3 @@
-let hello ='hello js';
-hello ='こんにちは';
-console.log(hello);
+alert('Hello JavaScript!');
+console.log('Hello JavaScript');
+

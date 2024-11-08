@@ -11,10 +11,24 @@ body{url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;70
 h1,h2,h3{ 
      /* 左から優先して見つかったフォントを適用する(游ゴシック) */
     font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;}
-ul li,ol li{
+h1 {
+  
+}
+
+    ul li,ol li{
     padding: 1em;
     list-style-position: inside;
 }
+
+div.form{
+padding: 5em;
+list-style-position: inside;
+}
+
+div.section {
+  padding: 2em;
+}
+
 /* 
  * <h2>タグにスタイルを適用
  */
@@ -62,5 +76,71 @@ div.section {
   color: rgb(121, 33, 198);
 }
 
+@import url(sanitize.css);
+h1 {
+    font-size: 25px;
+    margin: 0;
+}
 
+div.content {
+    background-color: #fff;
+    width: 600px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+    padding: 30px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+
+}
+button{
+    width: 100%;
+    background-color: #506b80;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+    opacity: ;
+    cursor: pointer;
+    transition: all 0.3s; 
+}
+
+.btn.slide {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn.slide span {
+  display: inline-block;
+width: 100%;
+height: 100%;
+background-color: black;
+position: absolute;
+top: 0;
+left: 0;
+transform: translateX(-100%);
+transition: transform 0.3s;
+z-index: -1;
+}
+.btn.slide:hover {
+  color: white;
+}
+.btn.slide:hover span {
+  transform: none;
+}
+
+.required {
+    background-color: #fee;
+    color: #f33;
+    padding: 3px;
+    font-size: .9em;
+    font-weight: bold;
+    margin-left: .3em;
+}
 
